@@ -1,0 +1,71 @@
+// ------------------------------------------------------------------
+// utilities > whitespace
+// ------------------------------------------------------------------
+// common whitespace sizes
+$sizes: (
+  "s": 0.75rem,
+  "r": 1.5rem,
+  "m": 3rem,
+  "l": 6rem,
+  "xl": 9rem,
+);
+
+// margin
+// ------------------------------------------------------------------
+// margin-top
+@each $size, $rem in $sizes {
+  .mt-#{$size} {
+    margin-top: $rem;
+  }
+}
+
+// margin-right
+@each $size, $rem in $sizes {
+  .mr-#{$size} {
+    margin-top: $rem;
+  }
+}
+
+// margin-bottom
+@each $size, $rem in $sizes {
+  .mb-#{$size} {
+    margin-top: $rem;
+  }
+}
+
+// margin-left
+@each $size, $rem in $sizes {
+  .ml-#{$size} {
+    margin-top: $rem;
+  }
+}
+
+// padding
+// ------------------------------------------------------------------
+// padding-top
+@each $size, $rem in $sizes {
+  .pt-#{$size} {
+    margin-top: $rem;
+  }
+}
+
+// paddig-right
+@each $size, $rem in $sizes {
+  .pr-#{$size} {
+    margin-top: $rem;
+  }
+}
+
+// padding-bottom
+@each $size, $rem in $sizes {
+  .pb-#{$size} {
+    margin-top: $rem;
+  }
+}
+
+// paddig-left
+@each $size, $rem in $sizes {
+  .pl-#{$size} {
+    margin-top: $rem;
+  }
+}

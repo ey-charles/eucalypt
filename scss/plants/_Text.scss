@@ -65,3 +65,22 @@
   font-family: variables.$font-2;
   font-style: italic;
 }
+
+// text sizes
+// ------------------------------------------------------------------
+$sizes: (
+  "xs": 0.73rem,
+  "s": 0.85rem,
+  "m": 1.3rem,
+  "l": 1.69rem,
+  "xl": 2.197rem,
+  "xxl": 2.8561rem,
+  "xxxl": 3.71293rem,
+  "giant": 6.2748517rem,
+);
+
+@each $size, $rem in $sizes {
+  .size-#{$size} {
+    font-size: $rem;
+  }
+}
