@@ -1,0 +1,67 @@
+// ------------------------------------------------------------------
+// plants > Text
+// ------------------------------------------------------------------
+@use "../tools/variables";
+
+// text color
+.Text {
+  color: variables.$color-dark;
+}
+.Text-white {
+  color: white;
+}
+.Text-muted {
+  color: variables.$color-muted;
+}
+.Text-green {
+  color: variables.$color-green;
+}
+.Text-red {
+  color: variables.$color-red;
+}
+.Text-blue {
+  color: variables.$color-blue;
+}
+.Text-accent {
+  // what color?
+}
+
+// appearance
+.Text-bold {
+  font-weight: 500;
+}
+.Text-bolder {
+  font-weight: 700;
+}
+.Text-regular {
+  font-weight: 400;
+}
+.Text-italic {
+  font-style: italic;
+}
+.Text-upper {
+  text-transform: uppercase;
+}
+// alignment
+.Text-center {
+  text-align: center;
+}
+.Text-left {
+  text-align: left;
+}
+.Text-right {
+  text-align: right;
+}
+
+.Text-highlight {
+  background: variables.$color-green;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.1875em 0.75em;
+}
+
+// text style
+.Text-serif {
+  font-family: variables.$font-2;
+  font-style: italic;
+}

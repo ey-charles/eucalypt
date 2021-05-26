@@ -1,0 +1,49 @@
+// ------------------------------------------------------------------
+// plants > Box
+// ------------------------------------------------------------------
+.Box {
+  display: block;
+}
+.Box-inline {
+  display: inline-block;
+}
+.Box-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.Box-left {
+  float: left;
+}
+.Box-right {
+  float: right;
+}
+
+// Box sizes
+// ------------------------------------------------------------------
+.Box-20 {
+  width: 19.9%;
+}
+.Box-30 {
+  width: 29.9%;
+}
+.Box-33 {
+  width: 33.29%;
+} // for three columns
+.Box-40 {
+  width: 39.9%;
+}
+.Box-50 {
+  width: 49.9%;
+} // for 2 columns
+.Box-60 {
+  width: 59.9%;
+}
+.Box-70 {
+  width: 69.9%;
+}
+.Box-80 {
+  width: 79.9%;
+}
+.Box-90 {
+  width: 89.9%;
+}

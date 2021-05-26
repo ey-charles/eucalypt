@@ -1,0 +1,17 @@
+// ------------------------------------------------------------------
+// plants > Link
+// ------------------------------------------------------------------
+@use "../tools/variables";
+
+.Link {
+  color: variables.$color-blue;
+  border-bottom: 1px solid variables.$color-blue;
+  padding: 0 0.25em 0 0;
+
+  &:hover,
+  &:focus {
+    color: white;
+    background: variables.$color-blue;
+    text-decoration: none;
+  }
+}

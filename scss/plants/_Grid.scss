@@ -1,0 +1,76 @@
+// ------------------------------------------------------------------
+// plants > Grid
+// ------------------------------------------------------------------
+@use "../tools/variables";
+@use "../tools/respond";
+
+// Using flexbox for the grid, inspired by Philip Walton:
+// http://philipwalton.github.io/solved-by-flexbox/demos/grids/
+// By default each .column within a .row will evenly take up
+// available width, and the height of each .column with take
+// up the height of the tallest .column in the same .row
+
+// Mobile first!
+// wrapped by default on mobile is usually a sensible default
+.Row {
+  display: flex;
+  flex-direction: column;
+}
+
+@include respond.above(variables.$bp-m) {
+  .Row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+
+    // Vertically Align Columns
+    // .--* vertically aligns every .col in the .row
+    &.--top {
+      align-items: flex-start;
+    }
+    &.--bottom {
+      align-items: flex-end;
+    }
+    &.--center {
+      align-items: center;
+    }
+    &.--stretch {
+      align-items: stretch;
+    }
+    &.--baseline {
+      align-items: baseline;
+    }
+  }
+
+  .Column {
+    display: block;
+    // IE 11 required specifying the flex-basis otherwise it breaks mobile
+    flex: 1 1 auto;
+    margin-left: 0;
+    max-width: 100%;
+    width: 100%;
+
+    // Column offsets
+    &.--offset-5 {
+      margin-left: 5%;
+    }
+    &.--offset-10 {
+      margin-left: 10%;
+    }
+  }
+
+  // Column widths
+  .Column-40 {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+  .Column-50 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .Column-60 {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+}
