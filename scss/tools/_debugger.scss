@@ -1,0 +1,10 @@
+// ------------------------------------------------------------------
+// tools > debugger
+// ------------------------------------------------------------------
+// As seen on https://www.freecodecamp.org/news/heres-my-favorite-weird-trick-to-debug-css-88529aa5a6a3/
+
+* {
+  color: hsla(210, 100%, 100%, 0.9) !important;
+  background: hsla(210, 100%, 50%, 0.5) !important;
+  outline: dashed 0.1rem hsla(210, 100%, 100%, 0.5) !important;
+}
