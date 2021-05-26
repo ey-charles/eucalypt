@@ -24,6 +24,20 @@
 
 // Tools
 // ------------------------------------------------------------------
-@use "tools/variables";
-@use "tools/respond";
 // @use "tools/debugger";
+
+// Seeds (foundation)
+// ------------------------------------------------------------------
+@import "seeds/base";
+@import "seeds/typography";
+@import "seeds/multimedia";
+@import "seeds/tables";
+// @import "seeds/icons";
+
+// Plants (objects)
+// ------------------------------------------------------------------
+// @import "plants/Box";
+// @import "plants/Text";
+// @import "plants/Link";
+// @import "plants/Button";
+// @import "plants/Grid";

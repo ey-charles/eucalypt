@@ -1,0 +1,78 @@
+// ------------------------------------------------------------------
+// seeds > typography
+// ------------------------------------------------------------------
+@use "../tools/variables";
+@use "../tools/respond";
+
+// sections
+// ------------------------------------------------------------------
+html {
+  font-family: variables.$font-1;
+  font-size: variables.$font-basesize;
+  font-weight: 400;
+  letter-spacing: 0.04375em;
+}
+
+body {
+  font-size: 1em;
+  font-weight: inherit;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @include respond.below(variables.$bp-l) {
+    font-size: 12px;
+  }
+}
+
+// headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: variables.$font-1;
+  font-size: 1em;
+  font-weight: inherit;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+// grouping
+// ------------------------------------------------------------------
+p {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  margin: 0;
+}
+
+// text-level
+// ------------------------------------------------------------------
+b,
+strong {
+  font-weight: 500;
+}
+
+em {
+  font-style: italic;
+  font-family: variables.$font-2;
+  font-weight: 400;
+}
+
+// anchors
+a {
+  color: variables.$color-blue;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    // what style?
+  }
+}
+
+::selection {
+  color: white;
+  background: darken(variables.$color-dark, 10%);
+}
