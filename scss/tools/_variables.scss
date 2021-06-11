@@ -1,6 +1,15 @@
 // ------------------------------------------------------------------
 // tools > variables
 // ------------------------------------------------------------------
+// standard sizes
+// ------------------------------------------------------------------
+$sizes: (
+  "s": 0.75rem,
+  "m": 1.5rem,
+  "l": 2.25rem,
+  "xl": 3rem,
+  "xxl": 6rem,
+);
 
 // breakpoints
 // ------------------------------------------------------------------
@@ -14,17 +23,6 @@ $bp-xxl: 1600px;
 
 // typography
 // ------------------------------------------------------------------
-$font-1: "Helvetica", "Arial", sans-serif;
+$font-1: "Work Sans", "Helvetica", "Arial", sans-serif;
 $font-2: "Georgia", serif;
 $font-basesize: 15px;
-
-// color palette
-// ------------------------------------------------------------------
-$color-dark: #080f1e;
-$color-lightgray: #f0f0f0;
-$color-blue: #365cf6;
-$color-red: #dd3f48;
-$color-green: #349b30;
-$color-orange: #e66e49;
-$color-yellow: #f5c242;
-$color-muted: #7a7979;

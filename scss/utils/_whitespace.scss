@@ -1,14 +1,7 @@
 // ------------------------------------------------------------------
-// utilities > whitespace
+// utils > whitespace
 // ------------------------------------------------------------------
-// common whitespace sizes
-$sizes: (
-  "s": 0.75rem,
-  "r": 1.5rem,
-  "m": 3rem,
-  "l": 6rem,
-  "xl": 9rem,
-);
+// use common whitespace sizes found in tools/_variables.scss
 
 // margin
 // ------------------------------------------------------------------
@@ -22,21 +15,37 @@ $sizes: (
 // margin-right
 @each $size, $rem in $sizes {
   .mr-#{$size} {
-    margin-top: $rem;
+    margin-right: $rem;
   }
 }
 
 // margin-bottom
 @each $size, $rem in $sizes {
   .mb-#{$size} {
-    margin-top: $rem;
+    margin-bottom: $rem;
   }
 }
 
 // margin-left
 @each $size, $rem in $sizes {
   .ml-#{$size} {
+    margin-left: $rem;
+  }
+}
+
+// margin-top and margin-bottom
+@each $size, $rem in $sizes {
+  .my-#{$size} {
     margin-top: $rem;
+    margin-bottom: $rem;
+  }
+}
+
+// margin-right and margin-left
+@each $size, $rem in $sizes {
+  .my-#{$size} {
+    margin-right: $rem;
+    margin-left: $rem;
   }
 }
 
@@ -45,27 +54,43 @@ $sizes: (
 // padding-top
 @each $size, $rem in $sizes {
   .pt-#{$size} {
-    margin-top: $rem;
+    padding-top: $rem;
   }
 }
 
 // paddig-right
 @each $size, $rem in $sizes {
   .pr-#{$size} {
-    margin-top: $rem;
+    padding-right: $rem;
   }
 }
 
 // padding-bottom
 @each $size, $rem in $sizes {
   .pb-#{$size} {
-    margin-top: $rem;
+    padding-bottom: $rem;
   }
 }
 
 // paddig-left
 @each $size, $rem in $sizes {
   .pl-#{$size} {
-    margin-top: $rem;
+    padding-left: $rem;
+  }
+}
+
+// paddig-top and padding-botton
+@each $size, $rem in $sizes {
+  .py-#{$size} {
+    padding-top: $rem;
+    padding-bottom: $rem;
+  }
+}
+
+// paddig-left and padding-right
+@each $size, $rem in $sizes {
+  .px-#{$size} {
+    padding-left: $rem;
+    padding-right: $rem;
   }
 }

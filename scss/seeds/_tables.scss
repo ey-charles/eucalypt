@@ -1,7 +1,6 @@
 // ------------------------------------------------------------------
 // seeds > tables
 // ------------------------------------------------------------------
-@use "../tools/variables";
 
 table {
   width: 100%;
@@ -19,8 +18,4 @@ td:first-child {
   font-weight: 500;
   text-align: left;
   padding-right: 1.5em;
-}
-
-tr:nth-child(2n + 2) {
-  background: variables.$color-lightgray;
 }

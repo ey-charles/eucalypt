@@ -1,28 +1,22 @@
 // ------------------------------------------------------------------
 // seeds > typography
 // ------------------------------------------------------------------
-@use "../tools/variables";
-@use "../tools/respond";
 
 // sections
 // ------------------------------------------------------------------
 html {
-  font-family: variables.$font-1;
-  font-size: variables.$font-basesize;
-  font-weight: 400;
+  font-family: $font-1;
+  font-size: $font-basesize;
+  font-weight: 500;
   letter-spacing: 0.04375em;
 }
 
 body {
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: inherit;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  @include respond.below(variables.$bp-l) {
-    font-size: 12px;
-  }
 }
 
 // headings
@@ -32,8 +26,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: variables.$font-1;
-  font-size: 1em;
+  font-family: $font-1;
+  font-size: inherit;
   font-weight: inherit;
   line-height: 1.5;
   margin: 0;
@@ -52,27 +46,27 @@ p {
 // ------------------------------------------------------------------
 b,
 strong {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 em {
   font-style: italic;
-  font-family: variables.$font-2;
-  font-weight: 400;
+  font-family: $font-2;
+  font-weight: 500;
 }
 
 // anchors
 a {
-  color: variables.$color-blue;
+  color: blue;
   text-decoration: none;
+}
 
-  &:hover,
-  &:focus {
-    // what style?
-  }
+a[href^="tel"] {
+  color: inherit;
+  text-decoration: none;
 }
 
 ::selection {
   color: white;
-  background: darken(variables.$color-dark, 10%);
+  background: darken(blue, 10%);
 }

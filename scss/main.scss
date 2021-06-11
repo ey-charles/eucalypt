@@ -8,23 +8,25 @@
 // 1. 'Tool' files are pure sass files. They include variables,
 //    mixins, and sass functions
 // 2. 'Seed' files only apply styles to html tags (a, em, p, h1, section. et al.)
-// 3. 'Plant' files apply styles to classes. They can be seen as "objects", from
-//    the smallest, like a simple '.Box', to broader classes as '.Menubar' or '.Footer'.
-//    Objects should be thought of as modules, and follow these guidelines:
-//      - They should start with Uppercase (ex. Box, Button, Block, Menubar, etc.)
-//      - Hierarchy is defined using '-' (e.g. '.Menu', '.Menu-item', '.Menu-item-description')
-//      - Objects can have modifiers. We identify them by starting the class with '-' (e.g. '.-no-space')
-// 4. 'Water' files are custom ux and ui. They usually are not reusable
-//    and you see them on a specific page. They add visual flare and fun to the page.
-//    Good 'water' files contain animations, images, backgrounds, custom layouts
-// 5. 'Utilities' are perfect for reusable bits of code that can be used
+// 3. 'Utilities' are perfect for reusable bits of code that can be used
 //    on any element on our site. Examples:
 //    padding, whitespace, wrapings
 //      - Important: utility classes start lowercase (ex. wrap-below-m, mb-s)
+// 4. 'Plant' files apply styles to classes. They can be seen as "objects", from
+//    the smallest, like a simple '.Box', to broader classes as '.Menubar' or '.Footer'.
+//    Objects should be thought of as modules, and follow these guidelines:
+//      - They should start with Uppercase (ex. Button, Block, Menubar, etc.)
+//      - Hierarchy is defined using '-' (e.g. '.Menu', '.Menu-item', '.Menu-item-description')
+//      - Objects can have modifiers. We identify them by starting the class with '-' (e.g. '.-no-space')
+// 5. 'Water' files are custom ux and ui. They usually are not reusable
+//    and you see them on a specific page. They add visual flare and fun to the page.
+//    Good 'water' files contain animations, images, backgrounds, custom layouts
 
 // Tools
 // ------------------------------------------------------------------
-// @use "tools/debugger";
+@import "tools/variables";
+@import "tools/respond";
+// @import "tools/debugger";
 
 // Seeds (foundation)
 // ------------------------------------------------------------------
@@ -32,11 +34,16 @@
 @import "seeds/typography";
 @import "seeds/multimedia";
 @import "seeds/tables";
-// @import "seeds/icons";
+
+// Utilities (Utility classes, also known as atomic css)
+// ------------------------------------------------------------------
+@import "utils/colors";
+@import "utils/whitespace";
+@import "utils/box";
+@import "utils/icons";
 
 // Plants (objects)
 // ------------------------------------------------------------------
-@import "plants/Box";
 @import "plants/Text";
 @import "plants/Link";
 @import "plants/Button";
@@ -44,10 +51,3 @@
 
 // Water (custom ux/ui)
 // ------------------------------------------------------------------
-
-// Utilities
-// ------------------------------------------------------------------
-@import "utilities/whitespace";
-@import "utilities/layout";
-// @import "utilities/hide";
-// @import "utilities/wrap";

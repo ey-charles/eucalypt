@@ -1,12 +1,13 @@
 // ------------------------------------------------------------------
 // seeds > multimedia
 // ------------------------------------------------------------------
-img {
-  max-width: 100%;
-  height: auto;
-}
-
+audio,
+video,
+canvas,
+img,
 figure {
+  display: block;
   max-width: 100%;
   height: auto;
+  display: block;
 }
